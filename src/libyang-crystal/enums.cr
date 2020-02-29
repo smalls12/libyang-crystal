@@ -1,7 +1,6 @@
 lib Libyang
 
-  
-  enum LYD_ANYDATA_VALUETYPE
+  enum LYDANYDATAVALUETYPE
     LYD_ANYDATA_CONSTSTRING
     LYD_ANYDATA_STRING
     LYD_ANYDATA_JSON
@@ -13,6 +12,5 @@ lib Libyang
     LYD_ANYDATA_LYB
     LYD_ANYDATA_LYBD
   end
-  
 
 end

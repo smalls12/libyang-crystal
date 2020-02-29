@@ -39,7 +39,7 @@ class DataNode
     # if (!module && !parent) {
     #     throw std::invalid_argument("At least one of module or parent parameters must be set");
     # }
-    
+
     new_node = Libyang.lyd_new_leaf(parent.node, _module.libyangModule, name, val_str)
     # new_node = lyd_new_leaf(parent ? parent->node : NULL, module ? module->module : NULL, name, val_str);
     # if (!new_node) {
@@ -55,7 +55,7 @@ class DataNode
 
   # Data_Node::Data_Node(S_Context context, const char *path, const char *value, LYD_ANYDATA_VALUETYPE value_type, int options)
   def initialize(context, path, value, value_type, options)
-    
+
     new_node : Libyang::LibyangDataNode* | Nil
     # lyd_node *new_node = nullptr;
 
@@ -80,15 +80,6 @@ class DataNode
     @node = new_node;
 
   end
-
-  
-
-
-#   def initialize()
-#   end
-
-#   def initialize()
-#   end
 
   def finalize
   end

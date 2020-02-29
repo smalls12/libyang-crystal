@@ -21,7 +21,7 @@ lib Libyang
   # API struct lyd_node *
   # lyd_new_path(struct lyd_node *data_tree, const struct ly_ctx *ctx, const char *path, void *value,
   #            LYD_ANYDATA_VALUETYPE value_type, int options)
-  fun lyd_new_path( parent : LibyangDataNode*, context : LibyangContext*, path : LibC::Char*, value : Void*, value_type : LYD_ANYDATA_VALUETYPE, options : LibC::Int32T ) : LibyangDataNode*
+  fun lyd_new_path( parent : LibyangDataNode*, context : LibyangContext*, path : LibC::Char*, value : Void*, value_type : LYDANYDATAVALUETYPE, options : LibC::Int32T ) : LibyangDataNode*
 
   # API struct lyd_node *
   # lyd_new_leaf(struct lyd_node *parent, const struct lys_module *module, const char *name, const char *val_str)

@@ -1,13 +1,19 @@
 name: libyang-crystal
 version: 0.1.0
 
+crystal: 0.33.0
+license: MIT
+
 authors:
   - smalls12 <37202992+smalls12@users.noreply.github.com>
 
-crystal: 0.33.0
-
-license: MIT
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.11.0
 
 targets:
   shards:
     context: src/context.cr
+
+description: Bindings for libyang

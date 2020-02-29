@@ -1,9 +1,9 @@
 require "./libyang-crystal"
 
 class Module
-  getter libyangModule : Libyang::LibyangModule*
+  getter module : Libyang::LibyangModule*
 
-  def initialize(@libyangModule)
+  def initialize(@module)
   end
 
   def finalize
