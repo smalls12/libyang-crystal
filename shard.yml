@@ -1,0 +1,13 @@
+name: libyang-crystal
+version: 0.1.0
+
+authors:
+  - smalls12 <37202992+smalls12@users.noreply.github.com>
+
+crystal: 0.33.0
+
+license: MIT
+
+targets:
+  shards:
+    context: src/context.cr
