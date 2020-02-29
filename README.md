@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      libyang-crystal:
-       github: your-github-user/libyang-crystal
+       github: smalls12/libyang-crystal
    ```
 
 2. Run `shards install`
@@ -36,4 +36,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [smalls12](https://github.com/your-github-user) - creator and maintainer
+- [smalls12](https://github.com/smalls12) - creator and maintainer
