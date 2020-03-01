@@ -17,7 +17,7 @@ class DataNode
     #     throw std::invalid_argument("At least one of module or parent parameters must be set");
     # }
 
-    new_node = Libyang.lyd_new(parent.node, _module.libyangModule, name)
+    new_node = Libyang.lyd_new(parent.node, _module.module, name)
     # new_node = lyd_new(parent ? parent->node : NULL, module ? module->module : NULL, name);
     # if (!new_node) {
     #     check_libyang_error(module ? module->module->ctx : parent->node->schema->module->ctx);
@@ -40,7 +40,7 @@ class DataNode
     #     throw std::invalid_argument("At least one of module or parent parameters must be set");
     # }
 
-    new_node = Libyang.lyd_new_leaf(parent.node, _module.libyangModule, name, val_str)
+    new_node = Libyang.lyd_new_leaf(parent.node, _module.module, name, val_str)
     # new_node = lyd_new_leaf(parent ? parent->node : NULL, module ? module->module : NULL, name, val_str);
     # if (!new_node) {
     #     check_libyang_error(module ? module->module->ctx : parent->node->schema->module->ctx);
