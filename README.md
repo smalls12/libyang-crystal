@@ -2,7 +2,15 @@
 
 # libyang-crystal
 
-TODO: Write a description here
+These are crystal bindings for the [libyang](https://github.com/CESNET/libyang.git) library.
+
+The bindings themselves are heavily based on the CPP bindings located in the same repo.
+
+The main goal for creating these bindings was to support [sysrepo](https://github.com/sysrepo/sysrepo.git) and its accompanying [sysreop-crystal](https://github.com/smalls12/sysrepo-crystal.git) bindings.
+
+These bindings can however stand on their own and be used to other projects requiring YANG support.
+
+These bindings are not meant to be exhaustive but rather a blueprint for expansion if need be.
 
 ## Installation
 
@@ -23,10 +31,6 @@ require "libyang-crystal"
 ```
 
 TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
 
 ## Contributing
 
