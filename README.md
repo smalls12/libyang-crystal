@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/smalls12/libyang-crystal.svg?token=tr4L2muJGExjHv772Sdt&branch=master)](https://travis-ci.com/smalls12/libyang-crystal)
+
 # libyang-crystal
 
 TODO: Write a description here
