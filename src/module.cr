@@ -1,7 +1,7 @@
 require "./libyang-crystal"
 
 class Module
-  getter module : Libyang::LibyangModule*
+  getter module : Libyang::LibyangModule* | Nil
 
   def initialize(@module)
   end

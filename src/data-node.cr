@@ -6,7 +6,7 @@ class DataNode
   def initialize(@node)
   end
 
-  def initialize(parent : DataNode, _module : Module, name : String)
+  def initialize(parent, _module : Module, name : String)
 
     new_node : Libyang::LibyangDataNode* | Nil
     # lyd_node *new_node = nullptr;
@@ -29,7 +29,7 @@ class DataNode
 
 
 
-  def initialize(parent : DataNode, _module : Module, name : String, val_str : String)
+  def initialize(parent, _module : Module, name : String, val_str : String)
 
     new_node : Libyang::LibyangDataNode* | Nil
     # lyd_node *new_node = nullptr;
@@ -54,7 +54,7 @@ class DataNode
 
 
   # Data_Node::Data_Node(S_Context context, const char *path, const char *value, LYD_ANYDATA_VALUETYPE value_type, int options)
-  def initialize(context, path, value, value_type, options)
+  def reset(context, path, value, value_type, options)
 
     new_node : Libyang::LibyangDataNode* | Nil
     # lyd_node *new_node = nullptr;

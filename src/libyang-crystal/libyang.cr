@@ -27,4 +27,7 @@ lib Libyang
   # lyd_new_leaf(struct lyd_node *parent, const struct lys_module *module, const char *name, const char *val_str)
   fun lyd_new_leaf( parent : LibyangDataNode*, module : LibyangModule*, name : LibC::Char*, val_str : LibC::Char*) : LibyangDataNode*
 
+  # struct lyd_node *lyd_dup(const struct lyd_node *node, int options);
+  fun lyd_dup( node : LibyangDataNode*, options : LibC::Int32T) : LibyangDataNode*
+
 end

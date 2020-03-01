@@ -1,13 +1,13 @@
 require "./libyang-crystal"
 
 class Context
-  getter context : Libyang::LibyangContext*
+  getter context : Libyang::LibyangContext* | Nil
 
   def initialize(@context)
   end
 
   # S_Module get_module(const char *name, const char *revision = nullptr, int implemented = 0);
-  def get_module(name : String, revision : String | Nil = nil, implemented : Int32 = 0)
+  def get_module(name : String | Nil, revision : String | Nil = nil, implemented : Int32 = 0)
 
     # const struct lys_module *module = ly_ctx_get_module(ctx, name, revision, implemented);
     # return module ? std::make_shared<Module>((lys_module *) module, deleter) : nullptr;
